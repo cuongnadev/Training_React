@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <title>React Training</title>
+</head>
+<body>
+    <div id="content"></div>
+    <script type="text/javascript">
+        // DOM elements
+        // var h1DOM = document.createElement("h1");
+        // h1DOM.title = "Hello";
+        // h1DOM.className = "heading";
+        // h1DOM.innerText = "Hi guys!"
+        // document.getElementById("content").appendChild(h1DOM);
+
+        // React elements
+        // React.createElement(tagName, props, children, n)
+        const h1 = React.createElement("h1", {
+            title: 'Hello',
+            className: 'heading'
+        }, 'Hi guys!');
+
+        // Render the React element to the DOM element with id "content"
+        // document.getElementById("content").appendChild(ReactDOM.render(h1, document.getElementById("content")));
+        ReactDOM.render(
+            h1, 
+            document.getElementById("content")
+        );
+    </script>
+</body>
+</html>
