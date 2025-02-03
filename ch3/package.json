@@ -1,0 +1,32 @@
+{
+  "name": "ch3",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-method": "./node_modules/.bin/babel method/jsx/script.jsx -o method/js/script.js -w",
+    "build-hello-world-props-jsx": "./node_modules/.bin/babel hello-world-props-jsx/jsx/script.jsx -o hello-world-props-jsx/js/script.js -w",
+    "build-hello-world-nested-jsx": "./node_modules/.bin/babel hello-world-nested-jsx/jsx/script.jsx -o hello-world-nested-jsx/js/script.js -w",
+    "build-hello-world-class-jsx": "./node_modules/.bin/babel hello-world-class-jsx/jsx/script.jsx -o hello-world-class-jsx/js/script.js -w",
+    "build": "npm run build-method & npm run build-hello-world-props-jsx & npm run build-hello-world-nested-jsx & npm run build-hello-world-class-jsx"
+  },
+  "keywords": [
+    "react.js"
+  ],
+  "dependencies": {
+    "ch3": "file:"
+  },
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-preset-react": "6.24.1"
+  }
+}
