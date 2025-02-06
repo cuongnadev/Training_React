@@ -1,5 +1,5 @@
 {
-  "name": "ch4",
+  "name": "ch5",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "ch4": "file:",
+    "ch5": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
